@@ -1,0 +1,167 @@
+.order-container {
+    width: 90%;
+    margin: 2.5rem 4rem;
+
+    .order-information {
+
+        .form-label {
+            font-size: 1.1rem;
+            margin: 1rem 0;
+            display: flex;
+            justify-content: flex-start;
+
+            span {
+                color: red;
+            }
+        }
+
+        .form-control {
+            line-height: 2rem;
+        }
+
+        .email-phone {
+
+            .form-control {
+                width: 100%;
+            }
+        }
+    }
+
+    .order-checkout {
+
+        .frame-outside {
+            padding-top: 10px;
+            margin: 2rem 4rem;
+            background: #f1f2f6;
+            border-radius: 10px;
+
+            .title {
+                font-size: 26px;
+                text-align: left;
+                border-bottom: 1px solid #57606f;
+                margin: 2rem 2rem;
+                font-weight: 900;
+                font-family: "Cairo", sans-serif;
+            }
+
+            .content {
+                margin: 25px 25px;
+                font-family: "Cairo", sans-serif;
+
+                .first-title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #57606f;
+                    text-align: left;
+                    margin: 0 0.6rem;
+
+                    .name-title {
+                        .product-title {
+                            font-size: 16px;
+                            font-weight: 800;
+                            text-align: left;
+                        }
+
+                        .product-list {
+                            font-size: 15px;
+                            font-style: italic;
+                            opacity: 0.9;
+                        }
+
+                        .product-price {
+                            font-size: 15px;
+                            font-style: italic;
+                            font-weight: 900;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+            .subtotal {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 25px 30px;
+                font-family: "Cairo", sans-serif;
+                font-weight: 900;
+                border-bottom: 1px solid #57606f;
+
+            }
+
+            .total {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 25px 30px;
+                font-family: "Cairo", sans-serif;
+                font-weight: 900;
+            }
+
+            .content-checkout {
+                margin: 25px 30px;
+                line-height: 1.5rem;
+                text-align: left;
+                font-size: 15px;
+                font-family: cursive;
+            }
+
+            .payment-method {
+                margin: 25px 30px;
+
+                ul {
+                    font-size: 17px;
+                    width: 400px;
+
+                    li {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+
+                        .checkbox {
+                            margin-left: 10px;
+                            font-size: 18px;
+                            display: flex;
+                        }
+
+                        #checkbox-1 {
+                            margin-left: -30px;
+                        }
+
+                        #checkbox-2 {
+                            margin-left: -30px;
+
+                        }
+                    }
+                }
+            }
+
+            button {
+                padding: 15px;
+                width: 315px;
+                margin-bottom: 30px;
+                font-size: 20px;
+                font-weight: 900;
+                color: #fff;
+                background: #009432;
+                border-radius: 10px;
+                font-family: "Cairo", sans-serif;
+                border-style: none;
+
+                &:hover {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+
+}
+
+.bill-detail {
+    font-size: 35px;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    text-align: left;
+    margin: 0 4rem;
+}

@@ -1,0 +1,28 @@
+.content-first {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 7rem 0;
+    position: relative;
+
+    .content-slogan {
+        display: flex;
+        margin: auto 0;
+        text-align: left;
+        width: 30rem;
+
+    }
+
+    .content-brand {
+        margin: auto 0;
+    }
+
+    .content-logo {
+        margin: 1.5rem 0;
+
+    }
+
+
+}

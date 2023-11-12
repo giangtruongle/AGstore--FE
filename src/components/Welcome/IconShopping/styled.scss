@@ -1,0 +1,41 @@
+.waraper-cart {
+
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cart-icon {
+        transition: 0.2s ease-in;
+        border-radius: 50%;
+        margin-bottom: 5px;
+
+        .count-cart {
+            width: 15px;
+            height: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -30px;
+            margin-left: 20px;
+            border-radius: 11px;
+            font-size: 13px;
+            background: red;
+            color: #fff;
+
+        }
+
+        &:hover:nth-child(1) {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        &:hover:nth-child(2) {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}

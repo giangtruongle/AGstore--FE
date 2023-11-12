@@ -1,0 +1,138 @@
+.cart-data-table {
+
+    border-collapse: collapse;
+    margin: 0.1rem 3rem;
+
+    .cart-title {
+        width: 100%;
+        margin-top: 50px;
+
+        th {
+            text-align: left;
+            font-size: 1.25rem;
+            border-bottom: 1.5px solid #dfe4ea;
+            padding-top: 30px;
+
+        }
+    }
+
+    .cart-data {
+        text-align: left;
+
+        td {
+            border-bottom: 1.5px solid #dfe4ea;
+        }
+
+        img {
+            margin-right: 3rem;
+        }
+
+        .delete-icon {
+
+            margin-left: 40%;
+
+            &:hover {
+                color: red;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+
+        .total-quatity {
+            .qty {
+                padding: 0.7rem;
+                background: #f1f2f6;
+            }
+
+            .edit-qty {
+                margin: 0 20px;
+                font-size: 10px;
+                text-align: left;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+.cart-total {
+    margin: 4rem 4rem;
+    padding: 1rem;
+    text-align: left;
+    background: #b8e994;
+    border-radius: 10px;
+
+    .title {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+
+    }
+
+    .total-total {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+
+    }
+
+    button {
+        border-style: none;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: 900;
+        background: #009432;
+        color: white;
+        margin-top: 20px;
+    }
+}
+
+.continute-shopping {
+    button {
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+        border-style: none;
+        width: 50%;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: 900;
+        background: #009432;
+        color: white;
+        margin-top: 65px;
+
+    }
+}
+
+.loading {
+    color: red;
+    margin-top: 100px;
+}
+
+.cart-empty {
+    margin-bottom: 30px;
+
+    .cart-empty-title {
+        font-size: 25px;
+        padding: 30px 30px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+}

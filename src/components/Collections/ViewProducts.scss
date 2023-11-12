@@ -1,0 +1,174 @@
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+$primary-color: #b8e994;
+$white-color: #ffffff;
+$normal-color: #1c1c1c;
+$border: #ebebeb;
+
+.products {
+    // border: 1px solid red;
+
+    h6 {
+        font-size: 50px;
+        margin: 40px;
+        padding: 30px;
+        background: linear-gradient(90deg, #fff 70%, #c23616 30%);
+        position: relative;
+        z-index: 1;
+        width: 96%;
+    }
+
+    h6::before,
+    h6::after {
+        content: '';
+        padding: 50px;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        display: block;
+        transform: translateX(-50%) translateY(-50%) rotate(0);
+        // border: 15px solid #c23616;
+        animation: spin 6s alternate infinite ease-in-out;
+    }
+
+    h6::before {
+        border-top: 15px solid #c23616;
+        border-left: 15px solid #c23616;
+        z-index: -1;
+    }
+
+    h6::after {
+        border-bottom: 15px solid #c23616;
+        border-right: 15px solid #c23616;
+        z-index: -1;
+    }
+
+    @keyframes spin {
+        100% {
+            transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        }
+    }
+
+    .card-product {
+        margin-top: 15px;
+
+        &:hover {
+            .card-product-img {
+                .card-product-action {
+                    bottom: 10px;
+                }
+            }
+        }
+
+        .card-product-img {
+            overflow: hidden;
+            position: relative;
+            background-position: center center;
+
+            .card-product-action {
+                display: flex;
+                gap: 12px;
+                font-size: 20px;
+                position: absolute;
+                bottom: -70px;
+                left: 10%;
+                text-align: center;
+                width: 100%;
+                @include transition(all, .5s);
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        a {
+                            background: $primary-color;
+                            border-color: $primary-color;
+
+                            .card-icon {
+                                color: $white-color;
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+
+                    a {
+                        font-size: 16px;
+                        color: $normal-color;
+                        height: 40px;
+                        width: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border: 1px solid $border;
+                        background: $white-color;
+                        display: block;
+                        border-radius: 50%;
+                        @include transition(all, .5s);
+
+                        .card-icon {
+                            position: relative;
+                            transform: rotate(0);
+                            @include transition(all, .3s);
+                        }
+                    }
+                }
+            }
+
+            img {
+                border-radius: 5px;
+                transition: 0.5s ease-in-out;
+            }
+
+            img:hover {
+                transform: scale(1.15);
+
+            }
+        }
+
+        .card-product-body {
+
+            margin-top: 10px;
+
+            a {
+                text-decoration: none;
+                color: #000;
+
+
+                h4 {
+                    font-size: 15px;
+                    width: 270px;
+                    height: 30px;
+                }
+
+                .card-product-price {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    s {
+                        margin-bottom: 7px;
+                        font-size: 13px;
+                    }
+
+                    h5 {
+                        font-size: 15px;
+                        transition: 0.5s ease-in-out;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+}

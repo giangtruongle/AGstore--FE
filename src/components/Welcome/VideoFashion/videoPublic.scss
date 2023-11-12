@@ -1,0 +1,47 @@
+.collection_video {
+
+    .title_slogan {
+        position: relative;
+
+        .title_slogan video {
+            max-width: 100%;
+            height: 100%;
+            object-position: center;
+
+        }
+
+        @media screen and (max-width: 992px) {
+            video {
+                height: 500px;
+                object-position: center;
+                width: 95%;
+            }
+        }
+
+        .title-block-product {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            background: #000;
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            text-transform: uppercase;
+            mix-blend-mode: multiply;
+            font-weight: 900;
+            font-size: 200px;
+        }
+
+        @media screen and (max-width: 992px) {
+            .title-block-product {
+                font-size: 120px;
+                height: 500px;
+            }
+        }
+
+    }
+
+}
